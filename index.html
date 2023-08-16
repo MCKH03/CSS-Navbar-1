@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/output.css" />
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.png" />
+    <script defer src="./main.js"></script>
+    <title>Navbar 1</title>
+  </head>
+  <body class="flex items-center justify-center h-screen">
+    <div
+      class="w-full h-full flex items-center justify-center bg-blue-dark-custom"
+    >
+      <nav
+        class="nav w-[90%] h-16 fixed bottom-5 flex items-center justify-between px-7 py-3 bg-white rounded-2xl"
+      >
+        <button
+          class="w-7 h-7 relative nav-btn focus:tap-highlight-transparent transition-all duration-500"
+          data-position="0"
+        >
+          <span
+            class="indicator absolute -bottom-2 left-0 w-full h-1 rounded-full bg-blue-dark-custom transition-all duration-500"
+          ></span>
+          <svg class="w-full h-full">
+            <use xlink:href="./assets/icons/sprite.svg#home"></use>
+          </svg>
+        </button>
+        <button
+          class="w-7 h-7 relative nav-btn focus:tap-highlight-transparent transition-all duration-500"
+          data-position="1"
+        >
+          <svg class="w-full h-full">
+            <use xlink:href="./assets/icons/sprite.svg#inbox"></use>
+          </svg>
+        </button>
+        <div
+          class="w-16 h-16 -translate-y-8 plus-btn focus:tap-highlight-transparent shadow-2xl rounded-full transition-all duration-500 relative"
+        >
+          <svg
+            viewBox="0 0 100 100"
+            class="w-full h-full bg-blue-light-custom rounded-full transition-all duration-700 plus"
+            fill="none"
+            stroke="white"
+            stroke-width="3px"
+            stroke-linejoin="round"
+            stroke-linecap="round"
+          >
+            <path d="m 30 50 h 40 a 1 1 0 0 0 0 -20 l -40 40"></path>
+            <path d="m 50 30 v 40 a 1 1 0 0 0 20 0 l -40 -40"></path>
+          </svg>
+
+          <div
+            class="absolute top-0 w-12 h-12 rounded-full bg-blue-light-custom left-1/2 -translate-x-1/2 flex items-center justify-center -z-10 sub-btn--1 sub-btn transition-all duration-500"
+          >
+            <svg class="w-1/2 h-1/2 fill-white">
+              <use xlink:href="./assets/icons/sprite.svg#share"></use>
+            </svg>
+          </div>
+          <div
+            class="absolute top-0 w-12 h-12 rounded-full bg-blue-light-custom left-1/2 -translate-x-1/2 flex items-center justify-center -z-10 sub-btn--2 sub-btn transition-all duration-500"
+          >
+            <svg class="w-1/2 h-1/2 fill-white">
+              <use xlink:href="./assets/icons/sprite.svg#trash"></use>
+            </svg>
+          </div>
+        </div>
+        <button
+          class="w-7 h-7 relative nav-btn focus:tap-highlight-transparent transition-all duration-500"
+          data-position="2"
+        >
+          <svg class="w-full h-full">
+            <use xlink:href="./assets/icons/sprite.svg#bell"></use>
+          </svg>
+        </button>
+        <button
+          class="w-7 h-7 relative nav-btn focus:tap-highlight-transparent transition-all duration-500"
+          data-position="3"
+        >
+          <svg class="w-full h-full">
+            <use xlink:href="./assets/icons/sprite.svg#profile"></use>
+          </svg>
+        </button>
+      </nav>
+    </div>
+  </body>
+</html>

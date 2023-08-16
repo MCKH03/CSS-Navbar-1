@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .plus {
+    stroke-dasharray: 40 100;
+    stroke-dashoffset: 140;
+  }
+
+  .plus.active {
+    stroke-dashoffset: 60;
+  }
+
+  .tap-highlight-transparent {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .nav-btn.active {
+    @apply -translate-y-1;
+  }
+
+  .sub-btn--1.active {
+    @apply -translate-x-16 -translate-y-12;
+  }
+
+  .sub-btn--2.active {
+    @apply translate-x-5 -translate-y-12;
+  }
+}
